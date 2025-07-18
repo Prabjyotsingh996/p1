@@ -29,12 +29,12 @@ const ResultsSection = () => {
         {/* Results Table */}
         <div className="text-center mb-16 space-y-8">
   <img 
-    src="public/images/t12.png " 
+    src="public/images/t12.png" 
     alt="Quantitative Results Table 1" 
     className="w-full max-w-5xl mx-auto rounded-lg shadow-medium" 
   />
   <img 
-    src="public/images/t34.png " 
+    src="public/images/t34.png" 
     alt="Quantitative Results Table 2" 
     className="w-full max-w-5xl mx-auto rounded-lg shadow-medium" 
   />
