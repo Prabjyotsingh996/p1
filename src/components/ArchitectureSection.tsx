@@ -70,7 +70,7 @@ marks achieving a new state-of-the-art (SOTA) of 50.8 mAP in natural images for 
         <div className="text-center animate-fade-in">
           <img 
             src="https://private-user-images.githubusercontent.com/143424182/433229769-4d94ee45-185b-4e10-b97e-b0a36e3ff42e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTI1OTA4NjIsIm5iZiI6MTc1MjU5MDU2MiwicGF0aCI6Ii8xNDM0MjQxODIvNDMzMjI5NzY5LTRkOTRlZTQ1LTE4NWItNGUxMC1iOTdlLWIwYTM2ZTNmZjQyZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNzE1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDcxNVQxNDQyNDJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03ODU0NjA2NjJhMGM3ZGM4NzZhYmFkYjk0NzY3ZGRmMTA4MjU2MzhiN2NjNTNlNDViYjRkZTBmNWYyYWY5ZWM1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.jfzdhGMeMzvAuAPHN8qJa2kMlIYnj5-P0C4y32jPJy4"
-            alt="D-MASTER Architecture" 
+            alt="Grounded teacher Architecture" 
             className="w-full max-w-4xl mx-auto rounded-lg shadow-medium hover-scale transition-all duration-300"
           />
         </div>

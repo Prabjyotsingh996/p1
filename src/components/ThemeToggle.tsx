@@ -22,7 +22,7 @@ const ThemeToggle = () => {
     <Button
       variant="outline"
       size="icon"
-      onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+      onClick={() => setTheme(theme === "light" ? "light" : "light")}
       className="w-10 h-10 animate-scale-in hover-scale transition-all duration-200"
     >
       {theme === "light" ? (
