@@ -29,12 +29,12 @@ const ResultsSection = () => {
         {/* Results Table */}
         <div className="text-center mb-16 space-y-8">
   <img 
-    src="/images/t12.png" 
+    src="public/images/t12.png " 
     alt="Quantitative Results Table 1" 
     className="w-full max-w-5xl mx-auto rounded-lg shadow-medium" 
   />
   <img 
-    src="images/t34.png" 
+    src="public/images/t34.png " 
     alt="Quantitative Results Table 2" 
     className="w-full max-w-5xl mx-auto rounded-lg shadow-medium" 
   />
@@ -60,12 +60,12 @@ scale objects. Also in Fig 5, we show how qualitatively the predictions are impr
           
           <div className="text-center">
             <img 
-              src="images/img5.png" 
+              src="public/images/img5.png" 
               alt="Qualitative Results Comparison" 
               className="w-full max-w-5xl mx-auto rounded-lg shadow-medium"
             />
             <img 
-    src="images/fig3.png" 
+    src="public/images/fig3.png" 
     alt="Quantitative Results Table 2" 
     className="w-full max-w-5xl mx-auto rounded-lg shadow-medium" 
   />
