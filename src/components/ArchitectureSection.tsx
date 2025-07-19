@@ -69,7 +69,7 @@ marks achieving a new state-of-the-art (SOTA) of 50.8 mAP in natural images for 
 
         <div className="text-center animate-fade-in">
           <img 
-            src="/images/1mg1.png"
+            src="images/1mg1.png"
             alt="Grounded teacher Architecture" 
             className="w-full max-w-4xl mx-auto rounded-lg shadow-medium hover-scale transition-all duration-300"
           />
