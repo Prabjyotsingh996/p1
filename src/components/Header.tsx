@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ExternalLink, FileText, Github } from "lucide-react";
-import ThemeToggle from "./ThemeToggle";
+import React from "react";
 
 const Header = () => {
   const links = [
@@ -9,19 +9,26 @@ const Header = () => {
     { label: "arXiv", url: "https://arxiv.org/abs/2504.15404", icon: ExternalLink },
   ];
 
+  const images = [
+    "/images/s4.png",
+    "/images/s3.png",
+    "/images/s2.png",
+    "/images/s1.png",
+  ];
+
   return (
-    <header className="bg-background border-b border-border transition-colors duration-300">
-      <div className="relative max-w-5xl mx-auto px-6 pt-16 pb-10 sm:pt-20">
+    <header className="bg-background border-b border-border transition-colors duration-300 font-sans">
+      <div className="relative max-w-7xl mx-auto px-6 pt-16 pb-10 sm:pt-20">
 
         {/* Logo */}
         <div className="flex justify-center mb-6">
-       <a href="https://gaash.nitsri.ac.in/" target="_blank" rel="noopener noreferrer">
-    <img
-      src="IMAGES/logo.png"
-      alt="NIT Logo"
-      className="w-20 h-20 sm:w-24 sm:h-24 object-contain hover:scale-105 transition-transform duration-300"
-    />
-  </a>
+          <a href="https://gaash.nitsri.ac.in/" target="_blank" rel="noopener noreferrer">
+            <img
+              src="/IMAGES/logo.png"
+              alt="NIT Logo"
+              className="w-20 h-20 sm:w-24 sm:h-24 object-contain hover:scale-105 transition-transform duration-300"
+            />
+          </a>
         </div>
 
         {/* Title */}
@@ -33,8 +40,8 @@ const Header = () => {
         </div>
 
         {/* Authors */}
-        <div className="text-center mb-10 space-y-3">
-          <div className="text-lg text-muted-foreground flex flex-wrap justify-center items-center gap-x-2 gap-y-1">
+        <div className="text-center mb-10 space-y-3 text-muted-foreground text-sm sm:text-base">
+          <div className="flex flex-wrap justify-center items-center gap-x-2 gap-y-1">
             <a href="https://www.tajamulashraf.com/" className="text-primary hover:underline">Tajamul Ashraf<sup>1,2*</sup></a>,
             <a href="https://linkedin.com/in/rajes-manna-489110212" className="text-primary hover:underline">Rajes Manna<sup>4†</sup></a>,
             <a href="https://psindiap.github.io/" className="text-primary hover:underline">Partha Sarathi Purkayastha<sup>3†</sup></a>,
@@ -42,14 +49,9 @@ const Header = () => {
             <a href="https://www.janibbashir.com/" className="text-primary hover:underline">Janibul Bashir<sup>4*</sup></a>
           </div>
 
-          <div className="text-sm text-muted-foreground leading-relaxed space-y-1">
-            <p><span className="font-semibold">1</span> Dept. of Computer Vision, MBZUAI, Abu Dhabi, UAE</p>
-            <p><span className="font-semibold">2</span> School of IT, IIT Delhi, New Delhi, India</p>
-            <p><span className="font-semibold">3</span> Microsoft Research India, Bengaluru, Karnataka, India</p>
-            <p><span className="font-semibold">4</span> Dept. of IT, NIT Srinagar, J&K, India</p>
-          </div>
-          <div className="text-sm text-muted-foreground mt-4 space-y-1">
-  <p>
+          <p><strong>1</strong> MBZUAI, Abu Dhabi • <strong>2</strong> IIT Delhi • <strong>3</strong> Microsoft Research • <strong>4</strong> NIT Srinagar</p>
+
+           <p>
     <strong>*Corresponding author(s):</strong>{" "}
     <a href="mailto:tajamul.ashraf@mbzuai.ac.ae" className="text-primary hover:underline">tajamul.ashraf@mbzuai.ac.ae</a>,{" "}
     <a href="mailto:janibbashir@nitsri.ac.in" className="text-primary hover:underline">janibbashir@nitsri.ac.in</a>
@@ -63,10 +65,8 @@ const Header = () => {
   <p><strong>†These authors contributed equally to this work.</strong> </p>
 </div>
 
-        </div>
-
-        {/* Buttons */}
-        <div className="flex flex-wrap justify-center gap-4 animate-fade-in">
+        {/* Action Buttons */}
+        <div className="flex flex-wrap justify-center gap-4 animate-fade-in mb-10">
           {links.map((link, index) => (
             <Button
               key={index}
@@ -87,6 +87,21 @@ const Header = () => {
             </Button>
           ))}
         </div>
+
+        {/* Marquee-style Scrolling Images */}
+        <div className="overflow-hidden relative w-full max-w-5xl mx-auto rounded-xl border shadow-lg animate-fade-in">
+          <div className="flex animate-marquee space-x-4">
+            {images.concat(images).map((src, i) => (
+              <img
+                key={i}
+                src={src}
+                alt={`scroll-${i}`}
+                className="h-72 sm:h-96 object-cover rounded-md"
+              />
+            ))}
+          </div>
+        </div>
+
       </div>
     </header>
   );

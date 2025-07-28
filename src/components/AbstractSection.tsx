@@ -1,7 +1,7 @@
 const AbstractSection = () => {
   return (
     <section className="bg-muted/30 py-16 transition-colors duration-300">
-      <div className="max-w-4xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-3xl font-bold text-center mb-8 text-foreground animate-fade-in">Abstract</h2>
         
         <div className="prose prose-lg max-w-none text-justify leading-relaxed text-foreground animate-fade-in">

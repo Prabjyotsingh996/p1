@@ -1,7 +1,7 @@
 const ResultsSection = () => {
   return (
     <section className="bg-background py-16 transition-colors duration-300">
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-3xl font-bold text-center mb-12 text-foreground">
           Quantitative Results on Datasets
         </h2>
@@ -43,7 +43,7 @@ const ResultsSection = () => {
 
         {/* Qualitative Results */}
         <div>
-          <h3 className="text-2xl font-semibold mb-6 text-foreground">Quantitative Results</h3>
+          <h3 className="text-7xl font-semibold mb-6 text-foreground">Quantitative Results</h3>
           <div className="mb-8">
             <p className="text-muted-foreground leading-relaxed">
                 Figure 5 presents the qualitative outcomes of our method, comparing predictions from baseline

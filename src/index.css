@@ -52,7 +52,7 @@ All colors MUST be HSL.
     --shadow-medium: 0 10px 15px -3px hsl(var(--primary) / 0.1);
     
     /* Typography */
-    --font-academic: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    --font-academic: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 
     --sidebar-background: 0 0% 98%;
 
@@ -128,6 +128,7 @@ All colors MUST be HSL.
   }
 
   html, body {
+  font-family:'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
     width: 100%;
     overflow-x: hidden;
     position: relative;
@@ -144,6 +145,7 @@ All colors MUST be HSL.
   }
 
   body {
+  font-family: var(--font-academic);
     @apply bg-background text-foreground transition-colors duration-300;
   }
 
