@@ -120,7 +120,7 @@ const Header = () => {
                 key={i}
                 src={src}
                 alt={`scroll-${i}`}
-                className="h-72 sm:h-96 object-cover rounded-md"
+                className="h-32 sm:h-40 md:h-72 lg:h-96 w-1/4 object-contain rounded-md flex-shrink-0 border-r border-border/50 bg-background"
               />
             ))}
           </div>
