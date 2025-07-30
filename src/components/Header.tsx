@@ -60,11 +60,17 @@ const Header = () => {
             <a href="https://www.janibbashir.com/" className="text-primary hover:underline">Janibul Bashir<sup>4*</sup></a>
           </div>
 
-          <div className="text-sm text-muted-foreground leading-relaxed space-y-1">
-            <p><span className="font-semibold">1</span> Dept. of Computer Vision, MBZUAI, Abu Dhabi, UAE</p>
-            <p><span className="font-semibold">2</span> School of IT, IIT Delhi, New Delhi, India</p>
-            <p><span className="font-semibold">3</span> Microsoft Research India, Bengaluru, Karnataka, India</p>
-            <p><span className="font-semibold">4</span> Dept. of IT, NIT Srinagar, J&K, India</p>
+          <div className="flex justify-center">
+            <div className="grid grid-cols-[auto,1fr] gap-x-2 gap-y-1 text-sm text-muted-foreground leading-relaxed text-left">
+              <span className="font-semibold text-right">1</span>
+              <span>Dept. of Computer Vision, MBZUAI, Abu Dhabi, UAE</span>
+              <span className="font-semibold text-right">2</span>
+              <span>School of IT, IIT Delhi, New Delhi, India</span>
+              <span className="font-semibold text-right">3</span>
+              <span>Microsoft Research India, Bengaluru, Karnataka, India</span>
+              <span className="font-semibold text-right">4</span>
+              <span>Dept. of IT, NIT Srinagar, J&amp;K, India</span>
+            </div>
           </div>
 
           <div className="text-sm text-muted-foreground mt-4 space-y-1">
