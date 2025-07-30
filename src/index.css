@@ -128,7 +128,6 @@ All colors MUST be HSL.
   }
 
   html, body {
-  font-family:'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
     width: 100%;
     overflow-x: hidden;
     position: relative;
@@ -145,7 +144,6 @@ All colors MUST be HSL.
   }
 
   body {
-  font-family: var(--font-academic);
     @apply bg-background text-foreground transition-colors duration-300;
   }
 

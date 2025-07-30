@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ExternalLink, FileText, Github } from "lucide-react";
-import React from "react";
+import ThemeToggle from "./ThemeToggle";
 
 const Header = () => {
   const links = [
@@ -10,23 +10,34 @@ const Header = () => {
   ];
 
   const images = [
-    "/images/s4.png",
-    "/images/s3.png",
-    "/images/s2.png",
-    "/images/s1.png",
+    "images/s1.png",
+    "images/s2.png",
+    "images/s3.png",
+    "images/s4.png",
   ];
 
   return (
-    <header className="bg-background border-b border-border transition-colors duration-300 font-sans">
-      <div className="relative max-w-7xl mx-auto px-6 pt-16 pb-10 sm:pt-20">
+    <header className="bg-background border-b border-border transition-colors duration-300">
+      <div className="relative max-w-5xl mx-auto px-6 pt-16 pb-10 sm:pt-20">
 
-        {/* Logo */}
-        <div className="flex justify-center mb-6">
+        {/* Logos Side-by-Side */}
+        <div className="flex justify-center items-center gap-6 mb-6">
+          {/* First logo */}
           <a href="https://gaash.nitsri.ac.in/" target="_blank" rel="noopener noreferrer">
             <img
-              src="/IMAGES/logo.png"
+              src="images/logo.png"
               alt="NIT Logo"
-              className="w-20 h-20 sm:w-24 sm:h-24 object-contain hover:scale-105 transition-transform duration-300"
+              className="w-32 h-32 sm:w-40 sm:h-40 object-contain hover:scale-105 transition-transform duration-300"
+            />
+          </a>
+
+          {/* Second uploaded logo */}
+          <a href="https://www.nitsri.ac.in/" target="_blank" rel="noopener noreferrer">
+            <img
+              src="images/nit logo.png"
+              alt="Institute Logo"
+              className="w-[200px] h-auto sm:w-[230px] object-contain hover:scale-105 transition-transform duration-300"
+              style={{ maxHeight: "80px" }}
             />
           </a>
         </div>
@@ -40,8 +51,8 @@ const Header = () => {
         </div>
 
         {/* Authors */}
-        <div className="text-center mb-10 space-y-3 text-muted-foreground text-sm sm:text-base">
-          <div className="flex flex-wrap justify-center items-center gap-x-2 gap-y-1">
+        <div className="text-center mb-10 space-y-3">
+          <div className="text-lg text-muted-foreground flex flex-wrap justify-center items-center gap-x-2 gap-y-1">
             <a href="https://www.tajamulashraf.com/" className="text-primary hover:underline">Tajamul Ashraf<sup>1,2*</sup></a>,
             <a href="https://linkedin.com/in/rajes-manna-489110212" className="text-primary hover:underline">Rajes Manna<sup>4†</sup></a>,
             <a href="https://psindiap.github.io/" className="text-primary hover:underline">Partha Sarathi Purkayastha<sup>3†</sup></a>,
@@ -49,24 +60,31 @@ const Header = () => {
             <a href="https://www.janibbashir.com/" className="text-primary hover:underline">Janibul Bashir<sup>4*</sup></a>
           </div>
 
-          <p><strong>1</strong> MBZUAI, Abu Dhabi • <strong>2</strong> IIT Delhi • <strong>3</strong> Microsoft Research • <strong>4</strong> NIT Srinagar</p>
+          <div className="text-sm text-muted-foreground leading-relaxed space-y-1">
+            <p><span className="font-semibold">1</span> Dept. of Computer Vision, MBZUAI, Abu Dhabi, UAE</p>
+            <p><span className="font-semibold">2</span> School of IT, IIT Delhi, New Delhi, India</p>
+            <p><span className="font-semibold">3</span> Microsoft Research India, Bengaluru, Karnataka, India</p>
+            <p><span className="font-semibold">4</span> Dept. of IT, NIT Srinagar, J&K, India</p>
+          </div>
 
-           <p>
-    <strong>*Corresponding author(s):</strong>{" "}
-    <a href="mailto:tajamul.ashraf@mbzuai.ac.ae" className="text-primary hover:underline">tajamul.ashraf@mbzuai.ac.ae</a>,{" "}
-    <a href="mailto:janibbashir@nitsri.ac.in" className="text-primary hover:underline">janibbashir@nitsri.ac.in</a>
-  </p>
-  <p>
-    <strong>Contributing authors:</strong>{" "}
-    <a href="mailto:rajes2021bite063@nitsri.ac.in" className="text-primary hover:underline">rajes2021bite063@nitsri.ac.in</a>,{" "}
-    <a href="mailto:t-ppurkayast@microsoft.com" className="text-primary hover:underline">t-ppurkayast@microsoft.com</a>,{" "}
-    <a href="mailto:tavaheed2022bite008@nitsri.ac.in" className="text-primary hover:underline">tavaheed2022bite008@nitsri.ac.in</a>
-  </p>
-  <p><strong>†These authors contributed equally to this work.</strong> </p>
-</div>
+          <div className="text-sm text-muted-foreground mt-4 space-y-1">
+            <p>
+              <strong>*Corresponding author(s):</strong>{" "}
+              <a href="mailto:tajamul.ashraf@mbzuai.ac.ae" className="text-primary hover:underline">tajamul.ashraf@mbzuai.ac.ae</a>,{" "}
+              <a href="mailto:janibbashir@nitsri.ac.in" className="text-primary hover:underline">janibbashir@nitsri.ac.in</a>
+            </p>
+            <p>
+              <strong>Contributing authors:</strong>{" "}
+              <a href="mailto:rajes2021bite063@nitsri.ac.in" className="text-primary hover:underline">rajes2021bite063@nitsri.ac.in</a>,{" "}
+              <a href="mailto:t-ppurkayast@microsoft.com" className="text-primary hover:underline">t-ppurkayast@microsoft.com</a>,{" "}
+              <a href="mailto:tavaheed2022bite008@nitsri.ac.in" className="text-primary hover:underline">tavaheed2022bite008@nitsri.ac.in</a>
+            </p>
+            <p><strong>†These authors contributed equally to this work.</strong></p>
+          </div>
+        </div>
 
         {/* Action Buttons */}
-        <div className="flex flex-wrap justify-center gap-4 animate-fade-in mb-10">
+        <div className="flex flex-wrap justify-center gap-4 animate-fade-in">
           {links.map((link, index) => (
             <Button
               key={index}
@@ -88,9 +106,9 @@ const Header = () => {
           ))}
         </div>
 
-        {/* Marquee-style Scrolling Images */}
-        <div className="overflow-hidden relative w-full max-w-5xl mx-auto rounded-xl border shadow-lg animate-fade-in">
-          <div className="flex animate-marquee space-x-4">
+        {/* Marquee Image Section */}
+        <div className="overflow-hidden relative w-full max-w-5xl mx-auto rounded-xl border shadow-lg animate-fade-in mt-0">
+          <div className="flex w-[200%] animate-marquee space-x-4 pause-on-hover">
             {images.concat(images).map((src, i) => (
               <img
                 key={i}
@@ -101,7 +119,6 @@ const Header = () => {
             ))}
           </div>
         </div>
-
       </div>
     </header>
   );

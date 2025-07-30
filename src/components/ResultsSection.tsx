@@ -40,15 +40,14 @@ const ResultsSection = () => {
   />
 </div>
 
-
         {/* Qualitative Results */}
         <div>
-          <h3 className="text-7xl font-semibold mb-6 text-foreground">Quantitative Results</h3>
-          <div className="mb-8">
-            <p className="text-muted-foreground leading-relaxed">
-                Figure 5 presents the qualitative outcomes of our method, comparing predictions from baseline
- AT [71] in the top row with those from the Ground Truth (GT) in the bottom row. The GT effectively
- corrects misclassifications, as highlighted by the blue boxes. For instance, in columns 1, 2, and 4,
+          <h3 className="text-2xl font-semibold mb-6 text-foreground">Quantitative Results</h3>
+          <div className="mb-12">
+            <p className="mb-4">
+                Figure 5 presents the qualitative outcomes of our method, comparing predictions from baseline AT [71] 
+                in the top row with those from the Ground Truth (GT) in the bottom row. The GT effectively corrects 
+ misclassifications, as highlighted by the blue boxes. For instance, in columns 1, 2, and 4,
  the GT accurately labels ’person’, ’car’, and ’truck’, respectively, rectifying the AT’s errors. Moreover,
  the GT demonstrates a notable reduction in both false positives and false negatives, indicated by the
  pink and red boxes, respectively. This enhancement signifies improved detection accuracy across
